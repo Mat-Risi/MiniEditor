@@ -486,5 +486,22 @@ namespace Editor
             // Inicia o processo
             calculadora.Start();
         }
+
+        private void outrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Cria um novo processo
+            Process Outro = new Process();
+
+            // Define o nome do aplicativo a ser iniciado
+            Outro.StartInfo.FileName = Microsoft.VisualBasic.Interaction.InputBox("Nome do programa")+".exe";
+
+            // Inicia o processo
+            Outro.Start();
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

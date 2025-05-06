@@ -50,6 +50,9 @@
             this.copiarCtrlcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colarCtrlvToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.corDoFundoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.funçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.paintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculadoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tamanhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alinhamentoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,9 +69,8 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.renomearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.funçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.paintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.calculadoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.outrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -81,7 +83,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ficheiroToolStripMenuItem,
             this.editarToolStripMenuItem,
-            this.funçõesToolStripMenuItem});
+            this.funçõesToolStripMenuItem,
+            this.sairToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -170,14 +173,14 @@
             // 
             this.corToolStripMenuItem.Image = global::Editor.Properties.Resources.pick;
             this.corToolStripMenuItem.Name = "corToolStripMenuItem";
-            this.corToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.corToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.corToolStripMenuItem.Text = "Cor";
             this.corToolStripMenuItem.Click += new System.EventHandler(this.corToolStripMenuItem_Click);
             // 
             // sombreadoToolStripMenuItem
             // 
             this.sombreadoToolStripMenuItem.Name = "sombreadoToolStripMenuItem";
-            this.sombreadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sombreadoToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.sombreadoToolStripMenuItem.Text = "Sombreado";
             this.sombreadoToolStripMenuItem.Click += new System.EventHandler(this.sombreadoToolStripMenuItem_Click_1);
             // 
@@ -185,7 +188,7 @@
             // 
             this.inserirImagemToolStripMenuItem.Image = global::Editor.Properties.Resources.rec;
             this.inserirImagemToolStripMenuItem.Name = "inserirImagemToolStripMenuItem";
-            this.inserirImagemToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.inserirImagemToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.inserirImagemToolStripMenuItem.Text = "Inserir imagem";
             this.inserirImagemToolStripMenuItem.Click += new System.EventHandler(this.inserirImagemToolStripMenuItem_Click);
             // 
@@ -193,7 +196,7 @@
             // 
             this.tamanhoDaLetraToolStripMenuItem.Image = global::Editor.Properties.Resources.t;
             this.tamanhoDaLetraToolStripMenuItem.Name = "tamanhoDaLetraToolStripMenuItem";
-            this.tamanhoDaLetraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tamanhoDaLetraToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.tamanhoDaLetraToolStripMenuItem.Text = "Tamanho da letra";
             this.tamanhoDaLetraToolStripMenuItem.Click += new System.EventHandler(this.tamanhoDaLetraToolStripMenuItem_Click);
             // 
@@ -205,7 +208,7 @@
             this.direitaToolStripMenuItem});
             this.alinhamentoToolStripMenuItem.Image = global::Editor.Properties.Resources.tr1;
             this.alinhamentoToolStripMenuItem.Name = "alinhamentoToolStripMenuItem";
-            this.alinhamentoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alinhamentoToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.alinhamentoToolStripMenuItem.Text = "Alinhamento";
             // 
             // centroToolStripMenuItem
@@ -236,7 +239,7 @@
             // 
             this.tipoDeLetraToolStripMenuItem.Image = global::Editor.Properties.Resources.ajuste_de_fonte;
             this.tipoDeLetraToolStripMenuItem.Name = "tipoDeLetraToolStripMenuItem";
-            this.tipoDeLetraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tipoDeLetraToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.tipoDeLetraToolStripMenuItem.Text = "Tipo de letra";
             this.tipoDeLetraToolStripMenuItem.Click += new System.EventHandler(this.tipoDeLetraToolStripMenuItem_Click_1);
             // 
@@ -244,7 +247,7 @@
             // 
             this.copiarCtrlcToolStripMenuItem.Image = global::Editor.Properties.Resources.copia_de;
             this.copiarCtrlcToolStripMenuItem.Name = "copiarCtrlcToolStripMenuItem";
-            this.copiarCtrlcToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.copiarCtrlcToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.copiarCtrlcToolStripMenuItem.Text = "Copiar (Ctrl+c)";
             this.copiarCtrlcToolStripMenuItem.Click += new System.EventHandler(this.copiarCtrlcToolStripMenuItem_Click);
             // 
@@ -252,16 +255,40 @@
             // 
             this.colarCtrlvToolStripMenuItem.Image = global::Editor.Properties.Resources.colar;
             this.colarCtrlvToolStripMenuItem.Name = "colarCtrlvToolStripMenuItem";
-            this.colarCtrlvToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.colarCtrlvToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.colarCtrlvToolStripMenuItem.Text = "Colar (Ctrl+v)";
             this.colarCtrlvToolStripMenuItem.Click += new System.EventHandler(this.colarCtrlvToolStripMenuItem_Click);
             // 
             // corDoFundoToolStripMenuItem
             // 
             this.corDoFundoToolStripMenuItem.Name = "corDoFundoToolStripMenuItem";
-            this.corDoFundoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.corDoFundoToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.corDoFundoToolStripMenuItem.Text = "Cor do fundo";
             this.corDoFundoToolStripMenuItem.Click += new System.EventHandler(this.corDoFundoToolStripMenuItem_Click);
+            // 
+            // funçõesToolStripMenuItem
+            // 
+            this.funçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.paintToolStripMenuItem,
+            this.calculadoraToolStripMenuItem,
+            this.outrosToolStripMenuItem});
+            this.funçõesToolStripMenuItem.Name = "funçõesToolStripMenuItem";
+            this.funçõesToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.funçõesToolStripMenuItem.Text = "Funções";
+            // 
+            // paintToolStripMenuItem
+            // 
+            this.paintToolStripMenuItem.Name = "paintToolStripMenuItem";
+            this.paintToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.paintToolStripMenuItem.Text = "Paint";
+            this.paintToolStripMenuItem.Click += new System.EventHandler(this.paintToolStripMenuItem_Click);
+            // 
+            // calculadoraToolStripMenuItem
+            // 
+            this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
+            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.calculadoraToolStripMenuItem.Text = "Calculadora";
+            this.calculadoraToolStripMenuItem.Click += new System.EventHandler(this.calculadoraToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 
@@ -373,28 +400,19 @@
             this.renomearToolStripMenuItem.Text = "Renomear";
             this.renomearToolStripMenuItem.Click += new System.EventHandler(this.renomearToolStripMenuItem_Click);
             // 
-            // funçõesToolStripMenuItem
+            // outrosToolStripMenuItem
             // 
-            this.funçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.paintToolStripMenuItem,
-            this.calculadoraToolStripMenuItem});
-            this.funçõesToolStripMenuItem.Name = "funçõesToolStripMenuItem";
-            this.funçõesToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
-            this.funçõesToolStripMenuItem.Text = "Funções";
+            this.outrosToolStripMenuItem.Name = "outrosToolStripMenuItem";
+            this.outrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.outrosToolStripMenuItem.Text = "Outros";
+            this.outrosToolStripMenuItem.Click += new System.EventHandler(this.outrosToolStripMenuItem_Click);
             // 
-            // paintToolStripMenuItem
+            // sairToolStripMenuItem
             // 
-            this.paintToolStripMenuItem.Name = "paintToolStripMenuItem";
-            this.paintToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.paintToolStripMenuItem.Text = "Paint";
-            this.paintToolStripMenuItem.Click += new System.EventHandler(this.paintToolStripMenuItem_Click);
-            // 
-            // calculadoraToolStripMenuItem
-            // 
-            this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
-            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.calculadoraToolStripMenuItem.Text = "Calculadora";
-            this.calculadoraToolStripMenuItem.Click += new System.EventHandler(this.calculadoraToolStripMenuItem_Click);
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -460,6 +478,8 @@
         private System.Windows.Forms.ToolStripMenuItem funçõesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem paintToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calculadoraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem outrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
     }
 }
 
